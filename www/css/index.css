@@ -1,0 +1,97 @@
+#titleTop {
+	
+	position: fixed;
+    top: 0px;
+    left:0;
+	height:75%;
+	width:100%;
+	background-color:#2B76E6;
+	display: table;
+}
+
+#titleBottom {
+	left:0;
+	position: fixed;
+    bottom: 0px;
+	height:25%;
+	width:100%;
+	background-color:#FFF;
+	display: table;
+}
+
+#titleTopText {
+	font-size:60px;
+    font-weight:normal;
+	color:white;
+	text-align:center;
+	display: table-cell;
+    vertical-align: middle;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+#titleBottomText {
+	font-size:60px;
+    font-weight:normal;
+	color:#2B76E6;
+	text-align:center;
+	display: table-cell;
+    vertical-align: middle;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+.circleBaseTitle {
+    border-radius: 50%;
+	vertical-align: middle;
+	text-align: center;
+	display: table;
+    margin: 0 auto;
+	color:#2B76E6;
+	font-size:25px;
+}
+
+.type3Title {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 7px solid #2B76E6;
+	display: table;
+    margin: 0 auto;
+}
+
+#circleTextTitle {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#titleCredits {
+	font-size:20px;
+    font-weight:normal;
+	color:white;
+	text-align:center;
+    vertical-align: middle;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+#menuSelecTop {
+	
+	position: fixed;
+    top: 0px;
+    left:0;
+	height:50%;
+	width:100%;
+	background-color:#2B76E6;
+	display: table;
+}
+
+#menuSelecBottom {
+	left:0;
+	position: fixed;
+    bottom: 0px;
+	height:50%;
+	width:100%;
+	background-color:#FFF;
+	display: table;
+	color:#2B76E6;
+}
+
