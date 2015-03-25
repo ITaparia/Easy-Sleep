@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel = "stylesheet" type="text/css" href="css/animate.css" />
         <link rel="shortcut icon" href="../favicon.ico">
@@ -17,11 +18,15 @@
         <title>EasySleep</title>
         
         <script>
-          
+         
           function sleepAtPage()
             {
                 window.location = "sleepAt.html"   
             }
+            
+        
+            
+           
           
           
           
@@ -31,14 +36,25 @@
 	
 	<body>
 	
-		<div id="menuSelecTop" class="animated fadeInDown"><span class="input input--kohana">
+		<div id="menuSelecTop" class="animated fadeInDown">
+                <span class="input input--kohana">
 					<input class="input__field input__field--kohana" type="text" id="input-29" />
 					<label class="input__label input__label--kohana" for="input-29">
 						<i class="fa fa-fw fa-clock-o icon icon--kohana"></i>
 						<span class="input__label-content input__label-content--kohana">Time</span>
 					</label>
-				</span></div>
-		<div id="menuSelecBottom" class="animated fadeInUp"><div id="titleBottomText"><span id="titleCredits" style="color:#2B76E6;">I should wake up at...</span></div></div>
+				</span>
+        </div>
+		<div id="menuSelecBottom" class="animated fadeInUp">
+            
+            <div class="spinner" id="waitIndicator">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+        </div>
 		
 		
 		<script type="text/javascript" src="js/index.js"></script>

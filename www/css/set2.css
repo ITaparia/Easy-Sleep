@@ -975,9 +975,12 @@
 
 /* Kohana */
 .input--kohana {
+    margin: 12% auto;
+    left:36%;
 	overflow: hidden;
 	background: #fff;
     width:40%;
+    
 }
 
 .input__field--kohana {
