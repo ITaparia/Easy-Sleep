@@ -975,11 +975,13 @@
 
 /* Kohana */
 .input--kohana {
-    margin: 12% auto;
-    left:36%;
+    margin:auto;
+    position:absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 	overflow: hidden;
 	background: #fff;
     width:40%;
+    height:15%;
     
 }
 

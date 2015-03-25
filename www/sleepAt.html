@@ -19,13 +19,33 @@
         
         <script>
          
+            var bean = false
           function sleepAtPage()
             {
                 window.location = "sleepAt.html"   
             }
             
         
-            
+          function timeCalc()
+            {
+                window.setInterval("memegonzo()", 3000)
+            }
+
+          function memegonzo()
+            {
+                
+                var kek = document.getElementById("waitIndicator");
+                if(bean == true)
+                {
+                    kek.innerHTML = "true"   
+                }
+                else
+                {
+                    kek.innerHTML = "false"   
+                }
+                
+            }
+
            
           
           
@@ -36,7 +56,8 @@
 	
 	<body>
 	
-		<div id="menuSelecTop" class="animated fadeInDown">
+		<div id="menuSelecTop" class="animated fadeInDown" onClick="timeCalc()">
+            <h3 style="position:absolute; width:100%; text-align:center; top:10%;">What time do you want to wake up?</h3>
                 <span class="input input--kohana">
 					<input class="input__field input__field--kohana" type="text" id="input-29" />
 					<label class="input__label input__label--kohana" for="input-29">
