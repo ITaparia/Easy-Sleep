@@ -27,26 +27,79 @@
             }
             
         
-          function timeCalc()
+          function timeWait()
             {
-                window.setInterval("memegonzo()", 3000)
+                timeCalc();
+                //window.setInterval("memegonzo()", 3000)
             }
 
-          function memegonzo()
+          function timeCalc()
             {
                 
                 var kek = document.getElementById("waitIndicator");
                 var userInput = document.getElementById("input-29").value;
-                if 
-                if(bean == true)
+                
+                
+                if(userInput == 1)
                 {
-                    kek.innerHTML = "true"   
+                 console.log("meme1")   
+                }
+                else if(userInput == 2)
+                {
+                 console.log("meme2")   
+                }
+                else if(userInput == 3)
+                {
+                 console.log("meme3")   
+                }
+                else if(userInput == 4)
+                {
+                 console.log("meme4")   
+                }
+                else if(userInput == 5)
+                {
+                 console.log("meme5")   
+                }
+                else if(userInput == 6)
+                {
+                 console.log("meme6")   
+                }
+                else if(userInput == 7)
+                {
+                 console.log("meme7")   
+                }
+                else if(userInput == 8)
+                {
+                 console.log("meme8")   
+                }
+                else if(userInput == 9)
+                {
+                 console.log("meme9")   
+                }
+                else if(userInput == 10)
+                {
+                 console.log("meme10")   
+                }
+                else if(userInput == 11)
+                {
+                 console.log("meme11")   
+                }
+                else if(userInput == 12)
+                {
+                 console.log("meme12")   
                 }
                 else
                 {
-                    kek.innerHTML = "false"   
+                    window.setInterval("errorMessage()", 3000)
                 }
                 
+                
+            }
+            
+            function errorMessage()
+            {
+                var headerText = document.getElementById("topHeader");
+                headerText.innerHTML = "Invalid entry. Try again."
             }
 
            
@@ -59,8 +112,8 @@
 	
 	<body>
 	
-		<div id="menuSelecTop" class="animated fadeInDown" onClick="timeCalc()">
-            <h3 style="position:absolute; width:100%; text-align:center; top:10%; color:white;">What time do you want to wake up?</h3>
+		<div id="menuSelecTop" class="animated fadeInDown">
+            <h3 style="position:absolute; width:100%; text-align:center; top:10%; color:white;" id = "topHeader">What time do you want to wake up?</h3>
                 <span class="input input--kohana">
 					<input class="input__field input__field--kohana" type="number" id="input-29" min=1 max=12 />
 					<label class="input__label input__label--kohana" for="input-29">
@@ -68,7 +121,7 @@
 						<span class="input__label-content input__label-content--kohana">Time</span>
 					</label>
 				</span>
-            <div style="position:absolute; width:100%; text-align:center; bottom:4%;"><button class="progress-button" data-style="shrink" data-horizontal><span id="submitText">Calculate</span></button></div>
+            <div style="position:absolute; width:100%; text-align:center; bottom:4%;" onClick="timeWait()"><button class="progress-button" data-style="shrink" data-horizontal><span id="submitText">Calculate</span></button></div>
         </div>
 		<div id="menuSelecBottom" class="animated fadeInUp">
             <h3 style="position:absolute; width:100%; text-align:center; top:10%; color:#2B76E6;">You should sleep at...</h3>
