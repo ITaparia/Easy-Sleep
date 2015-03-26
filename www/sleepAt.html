@@ -20,7 +20,7 @@
         
         <script>
          
-            var bean = false
+            
           function sleepAtPage()
             {
                 window.location = "sleepAt.html"   
@@ -36,6 +36,8 @@
             {
                 
                 var kek = document.getElementById("waitIndicator");
+                var userInput = document.getElementById("input-29").value;
+                if 
                 if(bean == true)
                 {
                     kek.innerHTML = "true"   
@@ -60,7 +62,7 @@
 		<div id="menuSelecTop" class="animated fadeInDown" onClick="timeCalc()">
             <h3 style="position:absolute; width:100%; text-align:center; top:10%; color:white;">What time do you want to wake up?</h3>
                 <span class="input input--kohana">
-					<input class="input__field input__field--kohana" type="text" id="input-29" />
+					<input class="input__field input__field--kohana" type="number" id="input-29" min=1 max=12 />
 					<label class="input__label input__label--kohana" for="input-29">
 						<i class="fa fa-fw fa-clock-o icon icon--kohana"></i>
 						<span class="input__label-content input__label-content--kohana">Time</span>
