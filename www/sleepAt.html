@@ -20,7 +20,7 @@
         
         <script>
          
-            
+          var sleepTimer;
           function sleepAtPage()
             {
                 window.location = "sleepAt.html"   
@@ -30,7 +30,7 @@
           function timeWait()
             {
                 //timeCalc();
-                window.setInterval("timeCalc()", 4700)
+                sleepTimer = setInterval("timeCalc()", 4700)
             }
 
           function timeCalc()
@@ -44,61 +44,73 @@
                 {
                  kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 1PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 2)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>1AM</strong> or <strong>3AM</strong> if you entered 2AM<br /><br />or...<br /><br /><strong>4PM</strong> or <strong>5PM</strong> if you entered 2PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 3)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>6AM</strong> or <strong>7AM</strong> if you entered 3AM<br /><br />or...<br /><br /><strong>1PM</strong> or <strong>9PM</strong> if you entered 3PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 4)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>12AM</strong> or <strong>6AM</strong> if you entered 4AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>7PM</strong> if you entered 4PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 5)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 5AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 5PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 6)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 6AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 6PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 7)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 7AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 7PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 8)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 8AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 8PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 9)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 9AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 9PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 10)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 10AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 10PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 11)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 11AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 11PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else if(userInput == 12)
                 {
-                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> if you entered 1AM<br /><br />or...<br /><br /><strong>2PM</strong> if you entered 1PM</span"
+                 kek.innerHTML = "<span style='font-size:20px%; position:absolute; width:100%; text-align:center; top:40%;'><strong>2AM</strong> or <strong>4AM</strong> if you entered 12AM<br /><br />or...<br /><br /><strong>2PM</strong> or <strong>4PM</strong> if you entered 12PM</span"
                  headerText.innerHTML = "What time do you want to wake up?";
+                 clearInterval(sleepTimer);
                 }
                 else
                 {
@@ -112,6 +124,7 @@
             {
                 var headerText = document.getElementById("topHeader");
                 headerText.innerHTML = "Invalid entry. Try again.";
+                clearInterval(sleepTimer)
             }
 
            
