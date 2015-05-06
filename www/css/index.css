@@ -97,7 +97,12 @@
 
 
 
-
+#info_pic {
+    position: absolute;
+    z-index: 999;
+    right: 2%;
+    top:2%;
+}
 
 
 
@@ -146,3 +151,5 @@
     opacity: 0;
   }
 }
+
+

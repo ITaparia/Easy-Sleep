@@ -5,6 +5,7 @@
         <script src = "script.js"> </script>
 		<meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel = "stylesheet" type="text/css" href="css/animate.css" />
@@ -13,15 +14,23 @@
         
         <script>
           
-          function sleepAtPage()
+          function goBack()
             {
-                window.location = "sleepAt.html";
+                window.history.back();
             }
             
-          function infoPage()
-            {
-                window.location = "infoPage.html";
-            }
+            $('#resizable').resizable({
+    maxHeight: parseInt(200),
+    maxWidth: parseInt(180),
+    resize: function(evt, ui) {        
+        var width1 = parseInt(ui.element.css('width')),
+            height1 = parseInt(ui.element.css('height'));
+        ui.element.css({
+            'font-size': (width1/10)+'px',
+            'line-height': (height1/10)+'px'
+        });
+    }
+});
           
           
           
@@ -31,11 +40,14 @@
 	
 	<body>
 	
-        <img id = "info_pic" src="images/info.png" width=7% onClick="infoPage();" class="animated fadeInDown">
+        
         
 		<div id="menuSelecTop" class="animated fadeInDown" onClick="sleepAtPage()">
             
-            <div id="titleTopText"><span id="titleCredits">I should sleep at...</span></div>
+            
+            <div id = "back_button"  onClick = "goBack();"> <img src="images/back_button.png" width=10% onClick = "goBack();"> </div>
+            
+            <div id = info_topText><span id = titleCredits style = "color:white">HOLY FUCK I LOVE MEMES JESUS FUCK</span></div>
             
             
         
