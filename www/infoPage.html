@@ -19,18 +19,7 @@
                 window.history.back();
             }
             
-            $('#resizable').resizable({
-    maxHeight: parseInt(200),
-    maxWidth: parseInt(180),
-    resize: function(evt, ui) {        
-        var width1 = parseInt(ui.element.css('width')),
-            height1 = parseInt(ui.element.css('height'));
-        ui.element.css({
-            'font-size': (width1/10)+'px',
-            'line-height': (height1/10)+'px'
-        });
-    }
-});
+        
           
           
           
@@ -47,14 +36,14 @@
             
             <div id = "back_button"  onClick = "goBack();"> <img src="images/back_button.png" width=10% onClick = "goBack();"> </div>
             
-            <div id = info_topText><span id = titleCredits style = "color:white">HOLY FUCK I LOVE MEMES JESUS FUCK</span></div>
+            <div id = info_topText><span id = titleCredits style = "color:white;font-size:2.6vh">Sometimes you wake up fresh, and other times you wake up groggy. Why? It all has to do with your sleep cycles. Every night, you go through 90 minute periods of light sleep to deep sleep transtitions. Wake up at the end of a sleep cycle during light sleep and you feel alert and fresh. Wake up in the middle of a sleep cycle during deep sleep, and you will feel disoriented and groggy.</span></div>
             
             
         
         </div>
 		<div id="menuSelecBottom" class="animated fadeInUp">
             
-            <div id="titleBottomText"><span id="titleCredits" style="color:#2B76E6;">I should wake up at...</span></div>
+            <div id=info_bottomText><span id="titleCredits" style="color:#2B76E6;font-size:2.6vh">Easy Sleep works by you entering a time you want to wake up or sleep at, and counting sleep cycles backwards, to determine when you should sleep or wake up to start your day ready! Hit the back arrow to select an option.</span></div>
         
         </div>
 		
